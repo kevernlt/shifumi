@@ -57,17 +57,17 @@ function updateScore(w,l,d) {
 }
 
 function gagner(joueur, ia) {
-    document.getElementById("result").textContent = "Vous avez gagné ! "+joueur+" gagne contre "+choixIAtoString(ia);
+    document.getElementById("result").textContent = "Vous avez gagné ! "+joueur+" gagne contre "+choixIAtoString(ia)+".";
     win++;
 }
 
 function perdre(joueur, ia) {
-    document.getElementById("result").textContent = "Vous avez perdu ! "+joueur+" perd contre "+choixIAtoString(ia);
+    document.getElementById("result").textContent = "Vous avez perdu ! "+joueur+" perd contre "+choixIAtoString(ia)+".";
     lose++;
 }
 
 function egalite(joueur) {
-    document.getElementById("result").textContent = "Egalité ! Vous avez tous les deux choisi " + joueur;
+    document.getElementById("result").textContent = "Egalité ! Vous avez tous les deux choisi " + joueur + ".";
     draw++;
 }
 
@@ -83,9 +83,10 @@ function choixIAtoString(choixIA) {
 }
 
 reset.addEventListener("click",()=>{
-    updateScore(0,0,0);
     win = 0;
     lose = 0;
     draw = 0;
     total = 0;
+    updateScore(0,0,0);
+    document.getElementById("result").textContent = "";
 })

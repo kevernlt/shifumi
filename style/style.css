@@ -12,13 +12,12 @@ body{
     min-height: 100vh;
 }
 
-
-
 main{
     border: 2px solid black;
     border-radius: 15px;
     background: linear-gradient(to bottom right, lightblue, lightgreen);
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     margin: 2rem;
     margin-left: 6rem;
     margin-right: 6rem;
@@ -26,8 +25,14 @@ main{
     width: 30%;
 }
 
-@media screen and (max-width: 975px) {
-    .btn-jeu{
+@media screen and (max-width: 924px) {
+    #last{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 587px) {
+    #middle{
         margin-top: 1rem;
     }
 }
@@ -36,6 +41,12 @@ main{
     background-color: lightsalmon;
     border-radius: 1rem;
     padding: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+#reset{
+    border-radius: 2rem;
+    padding: 0.7rem;
+    background:radial-gradient(circle, lightgray, darkgray)
 }
